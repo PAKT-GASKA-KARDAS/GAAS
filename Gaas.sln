@@ -3,12 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.Domain", "src\Gaas.Domain\Gaas.Domain.csproj", "{8021538D-3BF1-4721-A0DE-7696DE210C87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.Infrastructure", "src\Gaas.Infrastructure\Gaas.Infrastructure.csproj", "{40199C3E-E30B-462D-B174-529C8B744C32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.Application", "src\Gaas.Application\Gaas.Application.csproj", "{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaas.API", "src\Gaas.API\Gaas.API.csproj", "{2A59E219-6749-4E69-B3CF-095C1BB18E8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8021538D-3BF1-4721-A0DE-7696DE210C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8021538D-3BF1-4721-A0DE-7696DE210C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8021538D-3BF1-4721-A0DE-7696DE210C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8021538D-3BF1-4721-A0DE-7696DE210C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40199C3E-E30B-462D-B174-529C8B744C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40199C3E-E30B-462D-B174-529C8B744C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40199C3E-E30B-462D-B174-529C8B744C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40199C3E-E30B-462D-B174-529C8B744C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55C51E7E-3FF0-4CCC-9D5B-AB514193898F}
 	EndGlobalSection
 EndGlobal
