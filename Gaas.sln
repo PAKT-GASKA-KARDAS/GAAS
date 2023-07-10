@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.Infrastructure", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.Application", "src\Gaas.Application\Gaas.Application.csproj", "{047EC0F9-25AC-458B-A8B7-39AEDBE29C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gaas.API", "src\Gaas.API\Gaas.API.csproj", "{2A59E219-6749-4E69-B3CF-095C1BB18E8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaas.API", "src\Gaas.API\Gaas.API.csproj", "{2A59E219-6749-4E69-B3CF-095C1BB18E8A}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Gaas.UI", "src\Gaas.UI\Gaas.UI.esproj", "{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A59E219-6749-4E69-B3CF-095C1BB18E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9E858D-DCDE-4A85-8BAA-6EF961EBD16D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
