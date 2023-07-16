@@ -1,4 +1,4 @@
-﻿using Gaas.Application.Features.Models;
+﻿using Gaas.Application.Features.Parameters;
 using Gaas.Application.Features.Visits.Commands;
 using Gaas.Application.Features.Visits.Queries;
 using Gaas.Application.Models.DTOs;
@@ -6,6 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gaas.API.Controllers;
+
 [Route("api/[controller]")]
 [ApiController]
 public class VisitsController : ControllerBase
