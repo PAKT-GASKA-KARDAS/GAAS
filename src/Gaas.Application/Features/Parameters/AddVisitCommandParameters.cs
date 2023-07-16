@@ -1,4 +1,4 @@
-﻿namespace Gaas.Application.Features.Models;
+﻿namespace Gaas.Application.Features.Parameters;
 public class AddVisitCommandParameters
 {
     public string Name { get; set; } = string.Empty;
