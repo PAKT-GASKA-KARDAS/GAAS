@@ -2,7 +2,7 @@
 using MediatR;
 
 namespace Gaas.Application.Features.Visits.Queries;
-public class GetAllVisitsQuery : IRequest<IEnumerable<VisitDto>>
+public record GetAllVisitsQuery : IRequest<IEnumerable<VisitDto>>
 {
     public static GetAllVisitsQuery Create()
     {

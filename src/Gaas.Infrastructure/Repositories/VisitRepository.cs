@@ -8,21 +8,21 @@ namespace Gaas.Infrastructure.Repositories;
 public class VisitRepository : IVisitRepository
 {
     private readonly IMongoDatabase _database;
+    private IMongoCollection<VisitDocument> _collection;
 
     public VisitRepository(IMongoDatabase database)
     {
         _database = database;
+        _collection = _database.GetCollection<VisitDocument>("visits");
     }
 
     public async Task<IEnumerable<VisitDto>> GetAllVisits()
     {
-        var collection = _database.GetCollection<VisitDocument>("visits");
-
         var filter = Builders<VisitDocument>.Filter.Empty;
-        var documents = await collection.Find(filter).ToListAsync();
+        var documents = await _collection.Find(filter).ToListAsync();
 
         var visits = documents
-            .Select(x => new VisitDto(x.Name, x.DateStart, x.DateEnd))
+            .Select(x => new VisitDto(x.Name, x.EnterDate, x.LeaveDate))
             .ToList();
 
         return visits;
@@ -36,7 +36,7 @@ public class VisitRepository : IVisitRepository
         var filter = Builders<VisitDocument>.Filter.Eq(v => v.Id, objectId);
         var document = await collection.Find(filter).FirstOrDefaultAsync();
 
-        return new VisitDto(document.Name, document.DateStart, document.DateEnd);
+        return new VisitDto(document.Name, document.EnterDate, document.LeaveDate);
     }
 
     public async Task<string> AddVisit(Domain.Entities.Visit visit)
@@ -47,8 +47,8 @@ public class VisitRepository : IVisitRepository
         {
             Id = ObjectId.GenerateNewId(),
             Name = visit.Name,
-            DateStart = DateTime.UtcNow,
-            DateEnd = DateTime.UtcNow.AddMinutes(30)
+            EnterDate = DateTime.UtcNow,
+            LeaveDate = DateTime.UtcNow.AddMinutes(30)
         };
 
         await collection.InsertOneAsync(newVisit);

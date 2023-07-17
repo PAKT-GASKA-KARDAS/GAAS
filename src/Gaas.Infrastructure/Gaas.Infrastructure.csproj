@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Gaas.Application\Gaas.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DatabaseAccess\" />
+  </ItemGroup>
+
 </Project>

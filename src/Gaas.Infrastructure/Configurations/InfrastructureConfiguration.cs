@@ -10,6 +10,7 @@ public static class InfrastructureConfiguration
     {
         services
             .AddScoped<IVisitRepository, VisitRepository>()
+            .AddScoped<IClientRepository, ClientRepository>()
             .AddMongoDb();
 
         return services;

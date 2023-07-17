@@ -1,4 +1,4 @@
-﻿using Gaas.Application.Features.Models;
+﻿using Gaas.Application.Features.Parameters;
 using MediatR;
 
 namespace Gaas.Application.Features.Visits.Commands;
